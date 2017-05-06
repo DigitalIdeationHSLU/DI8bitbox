@@ -1,18 +1,55 @@
-# README #
+# DI 8bitbox
 
-Hello PCB World.
+"DI 8bitbox" - Digital Ideation Musterplatine zum 140 jährigen Bestehen der HSLU
 
-### What is this repository for? ###
+## What is inside this repository?
 
-* PCB Board for 140th anniversary of HSLU
-* v.01a
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* PCB EagleCad Files + Gerber production Files
+* Firmware (Arduino Code source)
+* Shell script to zip Gerber Files
+* CAM File for Itead Studio
 
-### Production Details ###
+## Assembly
 
-* Summary of set up
-* Configuration
+### Bills of materials
 
-### Who do I talk to? ###
+You'll need following parts in order to finish your board:
 
-* Created by Michi Schuermann and Gordan Savicic
+* 2 x 220R 0805 SMD resistors
+* 1 x SOT23-3 NPN Transistor
+* 2 x 1206 LEDs (preferably white, change resistor according to your colour)
+* 1 x Atttiny 84 SMD Version
+* 1 x Pogopin Sparkfun Connector ([Link](https://www.sparkfun.com/products/11591))
+* 1 x optionally a tiny loudspeaker
+
+### Soldering
+
+With little soldering skills, you should be able to finish the board. Please be careful when mounting the LEDs and the Attiny, since orientation is important. See mounting diagram:
+
+[img here](docs)
+
+## Install
+
+### Flashing Firmware
+
+Attach the Pogo-pin programmer to an Arduino or another AVR ISP-capable programming device. More infos here. Press the Pogo pins gently onto the pads on the bottom side of the board. Again, orientation is important:
+
+[img here]()
+
+Once in place, hit the programming button within your Arduino sketch. Alternatively, fire up a commandline and flash the hex file via avrdude:
+
+```
+avrdude command here...
+```
+
+### Final preparation
+
+Attach 3-5 Volts DC to the input pins where you'll find the battery icon. Make sure polarity is correct according to +/- signs. Solder the tiny loudspeaker on the other side of the board. You should hear sound coming out immediately.
+
+## Run
+
+Download either this [Android app](https://play.google.com/store/apps/details?id=org.jfedor.morsecode) for capturing sound or the [Morse Talk](https://play.google.com/store/apps/details?id=com.blueta.morsetransmitter&hl=fr) and hold it above one of the LEDs. You should be able to decrypt the message.
+
+## Credits
+
+* Created by Gordan Savičić & Michael Schürmann, Luzern 2017
