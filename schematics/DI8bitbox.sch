@@ -5156,8 +5156,8 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <part name="U$1" library="SparkFun-IC-Microcontroller" deviceset="ATTINY84" device="" value="ATTINY84"/>
 <part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
-<part name="R1" library="rcl" deviceset="R-EU_" device="M0805" value="220r"/>
-<part name="R2" library="rcl" deviceset="R-EU_" device="M0805" value="220r"/>
+<part name="R1" library="rcl" deviceset="R-EU_" device="M0805" value="100r"/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="M0805" value="100r"/>
 <part name="D1" library="SparkFun-LED" deviceset="LED-BLUE" device="1206" value="BLUE"/>
 <part name="D2" library="SparkFun-LED" deviceset="LED-BLUE" device="1206" value="BLUE"/>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -5166,7 +5166,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="C1" library="SparkFun-Capacitors" deviceset="10UF" device="-1210-50V-20%" value="10uF"/>
+<part name="C1" library="SparkFun-Capacitors" deviceset="10UF" device="-1206-6.3V-20%" value="100nF"/>
 <part name="TP7" library="testpad" deviceset="TP" device="TP18R"/>
 <part name="TP1" library="testpad" deviceset="TP" device="TP18R"/>
 <part name="TP2" library="testpad" deviceset="TP" device="TP18R"/>
@@ -5180,7 +5180,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <part name="J3" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="J4" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="X2" library="con-garry" deviceset="332-02" device=""/>
-<part name="R3" library="rcl" deviceset="R-EU_" device="M0805" value="220r"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="M0805" value="1k"/>
 </parts>
 <sheets>
 <sheet>
@@ -5190,9 +5190,9 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <instance part="U$1" gate="G$1" x="55.88" y="50.8"/>
 <instance part="GND1" gate="1" x="12.7" y="25.4"/>
 <instance part="SUPPLY1" gate="G$1" x="15.24" y="78.74"/>
-<instance part="R1" gate="G$1" x="101.6" y="33.02" rot="R270"/>
+<instance part="R1" gate="G$1" x="101.6" y="30.48" rot="R270"/>
 <instance part="R2" gate="G$1" x="93.98" y="27.94" rot="R270"/>
-<instance part="D1" gate="G$1" x="101.6" y="22.86"/>
+<instance part="D1" gate="G$1" x="101.6" y="20.32"/>
 <instance part="D2" gate="G$1" x="93.98" y="17.78"/>
 <instance part="GND3" gate="1" x="93.98" y="7.62"/>
 <instance part="Q1" gate="G$1" x="116.84" y="40.64"/>
@@ -5241,7 +5241,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="93.98" y1="12.7" x2="93.98" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="C"/>
-<wire x1="101.6" y1="17.78" x2="101.6" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="15.24" x2="101.6" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="12.7" x2="93.98" y2="12.7" width="0.1524" layer="91"/>
 <junction x="93.98" y="12.7"/>
 </segment>
@@ -5354,6 +5354,9 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <wire x1="81.28" y1="35.56" x2="93.98" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="93.98" y1="35.56" x2="93.98" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="93.98" y1="35.56" x2="101.6" y2="35.56" width="0.1524" layer="91"/>
+<junction x="93.98" y="35.56"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -5367,14 +5370,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="101.6" y1="27.94" x2="101.6" y2="25.4" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="U$1" gate="G$1" pin="(PCINT1/AIN0/ADC1)PA1"/>
-<wire x1="101.6" y1="38.1" x2="81.28" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="25.4" x2="101.6" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SPK" class="0">
