@@ -32,15 +32,23 @@ With little soldering skills, you should be able to finish the board. Please be 
 
 ### Flashing Firmware
 
-Attach the Pogo-pin programmer to an Arduino or another AVR ISP-capable programming device. More infos here. Press the Pogo pins gently onto the pads on the bottom side of the board. Again, orientation is important:
+Attach the Pogo-pin programmer to an Arduino or another AVR ISP-capable programming device. For the wiring see this photo:
 
-[img here]()
+![Pogo Pin Wiring](https://github.com/DigitalIdeationHSLU/DI8bitbox/blob/master/documentation/PogoPinWiring.jpg)
 
-Once in place, hit the programming button within your Arduino sketch. Alternatively, fire up a commandline and flash the hex file via avrdude:
+More infos here.
 
-```
-avrdude command here...
-```
+Once in place, prepare your Arduino by adding the Attiny to the list of boards. Here's a [HOWTO](http://highlowtech.org/?p=1695)
+
+Make sure the Arduino settings are correct
+
+[img here](https://github.com/DigitalIdeationHSLU/DI8bitbox/blob/master/documentation/PogoPinWiring.jpg)
+
+Press the Pogo pins gently onto the pads on the bottom side of the board. Again, orientation is important:
+
+[img here](https://github.com/DigitalIdeationHSLU/DI8bitbox/blob/master/documentation/PogoPinUpload.jpg)
+
+Hit the programming button within your Arduino sketch.
 
 ### Final preparation
 
