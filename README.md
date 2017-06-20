@@ -39,11 +39,9 @@ Attach the Pogo-pin programmer to an Arduino or another AVR ISP-capable programm
 
 ![Pogo Pin Wiring](https://github.com/DigitalIdeationHSLU/DI8bitbox/blob/master/documentation/PogoPinWiring.jpg)
 
-More infos here.
+Once in place, prepare your Arduino by adding the Attiny to the list of boards. Here's a [HOWTO](http://highlowtech.org/?p=1695).
 
-Once in place, prepare your Arduino by adding the Attiny to the list of boards. Here's a [HOWTO](http://highlowtech.org/?p=1695)
-
-Make sure the Arduino settings are correct
+Make sure the Arduino settings are correct by selecting "Arduino as ISP", the right Board "Attiny84", the right clock frequency "1Mhz" and the right USB port.
 
 ![Arduino Settings](https://github.com/DigitalIdeationHSLU/DI8bitbox/blob/master/documentation/Arduino_Settings.png)
 
@@ -51,7 +49,7 @@ Press the Pogo pins gently onto the pads on the bottom side of the board. Again,
 
 ![Pogo Pin Upload](https://github.com/DigitalIdeationHSLU/DI8bitbox/blob/master/documentation/PogoPinUpload.jpg)
 
-Hit the programming button within your Arduino sketch.
+Hit the programming button within your Arduino sketch. You should see a succesful File upload in the terminal screen of the Arduino IDE.
 
 ### Final preparation
 
