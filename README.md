@@ -42,11 +42,11 @@ Once in place, prepare your Arduino by adding the Attiny to the list of boards. 
 
 Make sure the Arduino settings are correct
 
-[img here](https://github.com/DigitalIdeationHSLU/DI8bitbox/blob/master/documentation/PogoPinWiring.jpg)
+![Arduino Settings](https://github.com/DigitalIdeationHSLU/DI8bitbox/blob/master/documentation/Arduino_Settings.png)
 
 Press the Pogo pins gently onto the pads on the bottom side of the board. Again, orientation is important:
 
-[img here](https://github.com/DigitalIdeationHSLU/DI8bitbox/blob/master/documentation/PogoPinUpload.jpg)
+![Pogo Pin Upload](https://github.com/DigitalIdeationHSLU/DI8bitbox/blob/master/documentation/PogoPinUpload.jpg)
 
 Hit the programming button within your Arduino sketch.
 
