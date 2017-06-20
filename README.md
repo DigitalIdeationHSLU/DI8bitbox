@@ -29,7 +29,7 @@ You can find the exact details in this [BOM](https://github.com/DigitalIdeationH
 
 With little soldering skills, you should be able to finish the board. Please be careful when mounting the LEDs and the Attiny, since orientation is important. See mounting diagram:
 
-![Mounting Plan](https://github.com/DigitalIdeationHSLU/DI8bitbox/blob/master/documentation/MountingPlan.png)
+![Mounting Plan](https://github.com/DigitalIdeationHSLU/DI8bitbox/blob/master/documentation/MountingPlan.jpg)
 
 ## Install
 
