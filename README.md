@@ -13,14 +13,17 @@
 
 ### Bills of materials
 
-You'll need following parts in order to finish your board:
+You'll need following parts in order to finish your board.
 
-* 2 x 220R 0805 SMD resistors
+* 2 x 100R 0805 SMD resistors
+* 1 x 1k 0805 SMD resistor
 * 1 x SOT23-3 NPN Transistor
 * 2 x 1206 LEDs (preferably white, change resistor according to your colour)
 * 1 x Atttiny 84 SMD Version
 * 1 x Pogopin Sparkfun Connector ([Link](https://www.sparkfun.com/products/11591))
 * 1 x optionally a tiny loudspeaker
+
+You can find the exact details in this [BOM](https://github.com/DigitalIdeationHSLU/DI8bitbox/blob/master/documentation/Warenkorb_juin13_0443.xls) Excel sheet.
 
 ### Soldering
 
