@@ -26,7 +26,7 @@ You'll need following parts in order to finish your board:
 
 With little soldering skills, you should be able to finish the board. Please be careful when mounting the LEDs and the Attiny, since orientation is important. See mounting diagram:
 
-[img here](docs)
+![Mounting Plan](https://github.com/DigitalIdeationHSLU/DI8bitbox/blob/master/documentation/MountingPlan.png)
 
 ## Install
 
