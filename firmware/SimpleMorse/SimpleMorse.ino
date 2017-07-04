@@ -12,7 +12,7 @@
 #define PIN_LED 0
 #define PIN_SPEAKER 2
 
-LEDMorseSender ledSender(PIN_LED1);
+LEDMorseSender ledSender(PIN_LED);
 SpeakerMorseSender speakerSender(
   PIN_SPEAKER,
   880,  // tone frequency
