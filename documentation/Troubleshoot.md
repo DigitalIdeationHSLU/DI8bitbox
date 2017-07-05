@@ -26,7 +26,7 @@ Pogo Pin draufhalten und folgendes im Terminal ausführen lassen:
 
 (Achtung: der Port muss übereinstimmen -> /dev/ttyUSB0. in deinem Fall könnte es auch der Port /dev/ttyACM0 sein bzw. /dev/ttyUSB1. bitte unbedingt überprüfen mit `ls /dev/tty` und dann TABULATOR Taste oder `ls /dev/ttyACM` und dann TABULATOR im Terminal). Der Terminal sollte dir anzeigen welcher Port existiert.
 
-Kann sich avrdude mit dem Chip verbinden?
+Kann sich avrdude mit dem Chip verbinden? Terminal mode sollte ungefähr so aussehen: http://www.nongnu.org/avrdude/user-manual/avrdude_9.html
 
 Wenn ja, hurray!
 
